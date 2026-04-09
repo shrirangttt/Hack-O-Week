@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🛒 Shopping Cart System</h1>
+
+<div class="form">
+    <input type="number" id="id" placeholder="Item ID">
+    <input type="text" id="name" placeholder="Item Name">
+    <input type="number" id="price" placeholder="Price">
+    <input type="number" id="quantity" placeholder="Quantity">
+
+    <button onclick="addAtBeginning()">Add at Beginning</button>
+    <button onclick="addAtEnd()">Add at End</button>
+</div>
+
+<div class="actions">
+    <input type="number" id="deleteId" placeholder="Enter ID to Delete">
+    <button onclick="deleteItem()">Delete Item</button>
+    <button onclick="displayCart()">Display Cart</button>
+    <button onclick="totalPrice()">Total Price</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody id="cartTable"></tbody>
+</table>
+
+<h2 id="total"></h2>
+
+<script src="script.js"></script>
+</body>
+</html>
